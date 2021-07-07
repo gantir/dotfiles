@@ -13,7 +13,7 @@ set -gx RTV_EDITOR /usr/bin/vim
 set -gx TERMINAL /usr/bin/termite
 set -gx BYOBU_CHARMAP UTF-8
 source ~/.config/fish/abbr.fish
-source ~/.config/fish/autoenv.fish
+# source ~/.config/fish/autoenv.fish
 
 if [ -e ~/.cargo/bin/ ]
   set -gx PATH ~/.cargo/bin $PATH
@@ -67,3 +67,10 @@ set -Ux PYENV_ROOT $HOME/.pyenv
 set -U fish_user_paths $PYENV_ROOT/bin $fish_user_paths
 
 status is-login; and pyenv init --path | source
+pyenv init - | source
+
+# status --is-interactive; and . (pyenv init -|psub)
+status --is-interactive; and . (pyenv virtualenv-init -|psub)
+
+# status is-login; and pyenv init --path | source
+# status --is-interactive; and source (pyenv virtualenv-init -|psub)

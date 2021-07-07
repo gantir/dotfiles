@@ -3,6 +3,8 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "buo/cask-upgrade"
 tap "homebrew/cask-fonts"
+tap "ruimarinho/tap"
+tap "aquasecurity/trivy"
 
 # Editors
 cask "visual-studio-code"
@@ -32,6 +34,8 @@ brew "yarn"
 brew "curl"
 brew "wget"
 brew "ack"
+brew "git"
+brew "git-gui"
 brew "git-flow"
 brew "p7zip"
 # cask "vlc"
@@ -56,8 +60,13 @@ cask  "brave-browser"
 
 # Cloud CLI
 # cask "google-cloud-sdk"
-# brew "awscli"
+brew "awscli"
 # brew "firebase-cli"
+brew "gsts"
+
+
+# Security Scanner
+brew "trivy"
 
 # Database
 # brew "rethinkdb"
@@ -69,3 +78,5 @@ cask  "brave-browser"
 # Optional
 cask "slack"
 # cask "lastpass"
+cask "zoom"
+
