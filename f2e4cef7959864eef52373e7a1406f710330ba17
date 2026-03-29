@@ -1,0 +1,23 @@
+development/git/gitconfig
+  aa4b29eddd3a22e6 114-120
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.16",
+  "base_commit_sha": "f2e4cef7959864eef52373e7a1406f710330ba17",
+  "prompts": {
+    "aa4b29eddd3a22e6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_2c6960307ffek7yoAwM7qjztjb",
+        "model": "google-vertex-anthropic/claude-opus-4-6@default"
+      },
+      "human_author": "Ramjee Ganti <ramjee@fiddler.ai>",
+      "messages": [],
+      "total_additions": 7,
+      "total_deletions": 1,
+      "accepted_lines": 30,
+      "overriden_lines": 0
+    }
+  }
+}
