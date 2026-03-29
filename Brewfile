@@ -12,6 +12,7 @@ tap "withgraphite/tap"
 cask "visual-studio-code"
 # cask "sublime-text"
 # cask "pycharm"
+# brew "neovim", args: ["HEAD"]
 brew "vim"
 
 # Terminal
@@ -44,6 +45,9 @@ brew "git-gui"
 brew "git-flow"
 brew "git-filter-repo"
 brew "p7zip"
+# cask "vlc"
+# cask "meld"
+
 brew "pre-commit"
 brew "jq"
 brew "tmux"
