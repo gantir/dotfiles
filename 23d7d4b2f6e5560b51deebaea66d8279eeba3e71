@@ -1,0 +1,41 @@
+meta/configs/binaries.linux.json
+  aa4b29eddd3a22e6 13
+shells/zsh/.zshrc
+  aa4b29eddd3a22e6 82-85
+shells/fish/config/fish/config.windows10.fish
+  aa4b29eddd3a22e6 20
+shells/fish/config/fish/functions/la.fish
+  aa4b29eddd3a22e6 2
+shells/fish/config/fish/.gitignore
+  aa4b29eddd3a22e6 3
+shells/fish/config/fish/config.fish
+  aa4b29eddd3a22e6 44,49,72-73,75,80
+shells/fish/config/fish/abbr.windows10.fish
+  aa4b29eddd3a22e6 2
+shells/fish/config/fish/functions/l.fish
+  aa4b29eddd3a22e6 2
+todo.md
+  aa4b29eddd3a22e6 2-3,5-6,8-11,13-18
+Brewfile
+  aa4b29eddd3a22e6 1-3,5,7,9,14,28-34,40-41,45,50,53-60,63-65,71,75,79-80,95-148,150-153
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.16",
+  "base_commit_sha": "23d7d4b2f6e5560b51deebaea66d8279eeba3e71",
+  "prompts": {
+    "aa4b29eddd3a22e6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_2c6960307ffek7yoAwM7qjztjb",
+        "model": "google-vertex-anthropic/claude-opus-4-6@default"
+      },
+      "human_author": "Ramjee Ganti <ramjee@fiddler.ai>",
+      "messages": [],
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 144,
+      "overriden_lines": 0
+    }
+  }
+}
