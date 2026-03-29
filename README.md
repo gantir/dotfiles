@@ -30,7 +30,7 @@ Screenshots are in the [Wiki](https://github.com/magicmonty/dotfiles_dotbot/wiki
 ## Installation
 
 ```bash
-~$ git clone --recursive https://github.com/magicmonty/dotfiles_dotbot .dotfiles
+~$ git clone --recursive https://github.com/gantir/dotfiles .dotfiles
 ```
 
 For installing a predefined profile:

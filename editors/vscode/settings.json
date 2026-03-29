@@ -1,13 +1,12 @@
 // Platzieren Sie Ihre Einstellungen in dieser Datei, um die Standardeinstellungen zu überschreiben.
 {
-    "window.zoomLevel": 0,
     "FSharp.enableTreeView": true,
     "workbench.startupEditor": "newUntitledFile",
     "extensions.ignoreRecommendations": false,
     "editor.fontFamily": "Monoid NF, Menlo, Monaco, 'Courier New', monospace",
     "editor.fontLigatures": true,
     "terminal.integrated.fontFamily": "Monoid NF",
-    "workbench.iconTheme": "vscode-great-icons",
+    "workbench.iconTheme": "vscode-icons",
     "workbench.colorTheme": "Gruvbox Dark (Medium)",
     "files.exclude": {
         "**/.git": true,
@@ -22,5 +21,100 @@
         "*.tidal": "haskell"
     },
     "tidalcycles.showOutputInConsoleChannel": true,
-    "git.enableSmartCommit": true
+    "git.enableSmartCommit": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "editor.minimap.enabled": false,
+    "redhat.telemetry.enabled": false,
+    "files.autoSave": "afterDelay",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+        "comments": "on",
+        "strings": "on",
+        "other": "on"
+    },
+    "telemetry.enableTelemetry": false,
+    "yaml.schemas": {
+        "file:///Users/ramjee/.vscode/extensions/atlassian.atlascode-2.10.12/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    },
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "atlascode.bitbucket.pipelines.monitorEnabled": false,
+    "atlascode.bitbucket.pipelines.hideEmpty": true,
+    "atlascode.bitbucket.issues.monitorEnabled": false,
+    "atlascode.bitbucket.explorer.relatedJiraIssues.enabled": true,
+    "atlascode.bitbucket.explorer.notifications.pullRequestCreated": false,
+    "editor.renderWhitespace": "all",
+    "git.mergeEditor": false,
+    "yaml.customTags": [
+        "!And",
+        "!And sequence",
+        "!If",
+        "!If sequence",
+        "!Not",
+        "!Not sequence",
+        "!Equals",
+        "!Equals sequence",
+        "!Or",
+        "!Or sequence",
+        "!FindInMap",
+        "!FindInMap sequence",
+        "!Base64",
+        "!Join",
+        "!Join sequence",
+        "!Cidr",
+        "!Ref",
+        "!Sub",
+        "!Sub sequence",
+        "!GetAtt",
+        "!GetAZs",
+        "!ImportValue",
+        "!ImportValue sequence",
+        "!Select",
+        "!Select sequence",
+        "!Split",
+        "!Split sequence"
+    ],
+    "aws.telemetry": false,
+    "window.zoomLevel": 1,
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.integrated.automationProfile.osx": {
+
+    },
+    "tabby.api.endpoint": "http://localhost:8080",
+    "tabby.inlineCompletion.triggerMode": "manual",
+    "tabby.usage.anonymousUsageTracking": true,
+    "vs-kubernetes": {
+        "vscode-kubernetes.helm-path-mac": "/Users/ramjee/.vs-kubernetes/tools/helm/darwin-amd64/helm",
+        "vscode-kubernetes.kubectl-path-mac": "/Users/ramjee/.vs-kubernetes/tools/kubectl/kubectl",
+        "vscode-kubernetes.minikube-path-mac": "/Users/ramjee/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
+        "vs-kubernetes.minikube-show-information-expiration": "2026-03-01T10:37:07.193Z"
+    },
+    "python.defaultInterpreterPath": "/Users/ramjee/work/projects/fiddler/fiddler-github/fiddler/.venv",
+    "docker.extension.enableComposeLanguageServer": false,
+    "[dockercompose]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        },
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "git.path": "/Users/ramjee/.git-ai/bin/git",
+    "chat.hookFilesLocations": {
+        "~/.github/hooks": true
+    },
+    "chat.useHooks": true
 }

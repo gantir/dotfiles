@@ -1,4 +1,4 @@
-set DEFAULT_USER martingondermann
+set DEFAULT_USER ramjee
 
 if [ -e "$TMUX" ]
   set -gx TERM xterm-256color
@@ -8,15 +8,26 @@ end
 
 set fish_key_bindings fish_vi_key_bindings
 
-set -gx EDITOR nvim
-
+set -gx EDITOR /usr/bin/vim
+set -gx RTV_EDITOR /usr/bin/vim
+set -gx TERMINAL /usr/bin/termite
+set -gx BYOBU_CHARMAP UTF-8
 source ~/.config/fish/abbr.fish
-source ~/.config/fish/autoenv.fish
+# source ~/.config/fish/autoenv.fish
 
 if [ -e ~/.cargo/bin/ ]
   set -gx PATH ~/.cargo/bin $PATH
-  set -gx MATES_DIR /Users/martingondermann/.contacts/pagansoft
+  set -gx MATES_DIR ~/.contacts/pagansoft
 end
+
+if [ -e /opt/dotnet ]
+  set -gx DOTNET_ROOT /opt/dotnet/
+end
+
+if [ -e ~/.dotnet/tools ]
+  set -gx PATH ~/.dotnet/tools $PATH
+end
+
 if [ -e ~/bin/ ]
   set -gx PATH ~/bin $PATH
 end
@@ -30,8 +41,40 @@ set -g theme_display_git_ahead_verbose yes
 set -g theme_display_git_untracked yes
 set -g fish_prompt_pwd_dir_length 0
 set -g theme_newline_cursor no
-set -g default_user martingondermann
+set -g default_user ramjee
 
 set -g DOTNET_CLI_TELEMETRY_OPTOUT 1
 
 test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
+
+
+# Go local
+fish_add_path ~/go/bin/
+
+# RUBY
+# adding to paths
+fish_add_path /usr/local/opt/ruby/bin
+
+# For compilers to find ruby:
+set -gx LDFLAGS "-L/usr/local/opt/ruby/lib"
+set -gx CPPFLAGS "-I/usr/local/opt/ruby/include"
+
+# For pkg-config to find ruby
+set -gx PKG_CONFIG_PATH "/usr/local/opt/ruby/lib/pkgconfig"
+
+#NODE
+# set -Ux NVM_DIR ~/.nvm
+nvm alias default v22.16.0
+
+#PYTHON
+
+
+# Work-specific config (not tracked in dotfiles)
+test -e ~/.config/fish/fiddler.local.fish; and source ~/.config/fish/fiddler.local.fish
+
+fish_add_path "$HOME/.local/bin"
+
+string match -q "$TERM_PROGRAM" "kiro" and . (kiro --locate-shell-integration-path fish)
+
+# Added by git-ai installer on Fri Mar 20 05:54:21 IST 2026
+fish_add_path -g "$HOME/.git-ai/bin"
