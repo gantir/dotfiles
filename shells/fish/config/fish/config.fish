@@ -41,12 +41,15 @@ set -g theme_display_git_ahead_verbose yes
 set -g theme_display_git_untracked yes
 set -g fish_prompt_pwd_dir_length 0
 set -g theme_newline_cursor no
-set -g default_user martingondermann
+set -g default_user ramjee
 
 set -g DOTNET_CLI_TELEMETRY_OPTOUT 1
 
 test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
-source ~/.config/fish/shortcuts.fish
+
+
+# Go local
+fish_add_path ~/go/bin/
 
 # RUBY
 # adding to paths
@@ -61,16 +64,17 @@ set -gx PKG_CONFIG_PATH "/usr/local/opt/ruby/lib/pkgconfig"
 
 #NODE
 # set -Ux NVM_DIR ~/.nvm
+nvm alias default v22.16.0
 
 #PYTHON
-set -Ux PYENV_ROOT $HOME/.pyenv
-set -U fish_user_paths $PYENV_ROOT/bin $fish_user_paths
 
-status is-login; and pyenv init --path | source
-pyenv init - | source
 
-# status --is-interactive; and . (pyenv init -|psub)
-status --is-interactive; and . (pyenv virtualenv-init -|psub)
+# Work-specific config (not tracked in dotfiles)
+test -e ~/.config/fish/fiddler.local.fish; and source ~/.config/fish/fiddler.local.fish
 
-# status is-login; and pyenv init --path | source
-# status --is-interactive; and source (pyenv virtualenv-init -|psub)
+fish_add_path "$HOME/.local/bin"
+
+string match -q "$TERM_PROGRAM" "kiro" and . (kiro --locate-shell-integration-path fish)
+
+# Added by git-ai installer on Fri Mar 20 05:54:21 IST 2026
+fish_add_path -g "$HOME/.git-ai/bin"

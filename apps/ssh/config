@@ -1,6 +1,7 @@
+# Host bitbucket.org
 Host *
-  IPQoS throughput
-
-Host bitbucket.org
-  IdentityFile ~/.ssh/id_rsa_bitbucket
-
+  IgnoreUnknown UseKeychain
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_ed25519_ramjee_fiddler_vcs
+  HostKeyAlgorithms=+ssh-dss

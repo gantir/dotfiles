@@ -1,3 +1,3 @@
 function l
-  exa -lh --git --color-scale $argv
+  eza -lh --git --color-scale $argv
 end

@@ -4,7 +4,7 @@
 
 [core]
 	excludesfile = ~/.gitignore_global
-	editor = /usr/bin/vim
+	editor = /usr/local/bin/vim
 
 [credential]
 	helper = "netrc -f ~/.netrc.asc -v"
@@ -126,3 +126,5 @@ protocol = https
 	showPatch = true
 [log]
 	date = relative
+[init]
+	defaultBranch = main
